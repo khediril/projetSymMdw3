@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TEST3{% endblock %}
+
+
+ {% block body %}
+ <h1>Liste des Etudiants </h1>
+ Votre nom est : {{ nom }}
+    <ul>
+    {% for etudiant in etudiants %}
+            <li>{{ etudiant }}</li>
+    {% endfor %}
+    <ul>
+ {% endblock %}

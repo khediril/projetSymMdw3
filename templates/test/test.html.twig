@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TEST3{% endblock %}
+
+
+ {% block body %}
+ <h1>Ma page TEST </h1>
+ <a class="nav-link" href="{{ path('test3') }}">Etudiants</a>
+ <a class="nav-link" href="{{ path('test4',{"nom":"ali"}) }}">Aller à la page test4</a>
+<img src="{{ asset("images/test.jpg")}}">
+ {% endblock %}
+    
+
+
