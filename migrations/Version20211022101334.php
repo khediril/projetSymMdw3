@@ -28,4 +28,5 @@ final class Version20211022101334 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->addSql('DROP TABLE produit');
     }
+    
 }

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProduitController!{% endblock %}
+
+{% block body %}
+{% if produit %}
+ <h2> le produit de id : {{ produit.id }} </h2>
+ Nom du produit : {{ produit.nom }} <br>
+ Prix du produit : {{ produit.prix }}<br>
+ Decription du produit: {{ produit.description }}
+ {% else %}
+    cet id est incorrect.
+ {% endif %}
+<a href="{{ path('produit_list') }}">Voir liste</a>
+{% endblock %}
